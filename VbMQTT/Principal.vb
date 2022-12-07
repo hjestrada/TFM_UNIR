@@ -1,4 +1,6 @@
-﻿Imports System.Threading
+﻿Imports System.IO.Ports
+Imports System.Reflection.Emit
+Imports System.Threading
 
 Public Class Principal
     Private Sub TimerValidacion_Tick(sender As Object, e As EventArgs) Handles TimerValidacion.Tick
@@ -18,13 +20,16 @@ Public Class Principal
 
             End Try
         End If
+
+
+
     End Sub
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimerValidacion.Start()
     End Sub
 
-    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -35,7 +40,8 @@ Public Class Principal
         Dashboard.Show()
     End Sub
 
-    Private Sub ConfiguraciónBrokerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfiguraciónBrokerToolStripMenuItem.Click
+
+    Private Sub ToolStripButton2_Click(sender As Object, e As EventArgs) Handles ToolStripButton2.Click
         Conf_Broker.MdiParent = Me
         Conf_Broker.Show()
     End Sub

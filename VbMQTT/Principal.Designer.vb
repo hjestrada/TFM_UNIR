@@ -26,10 +26,6 @@ Partial Class Principal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSplitButton1 = New System.Windows.Forms.ToolStripSplitButton()
-        Me.ConfiguraciónBrokerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConfiguraciónDeDispositivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSplitButton2 = New System.Windows.Forms.ToolStripSplitButton()
         Me.HistoricosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GráficosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,6 +37,7 @@ Partial Class Principal
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.LB_Fecha = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TimerValidacion = New System.Windows.Forms.Timer(Me.components)
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -52,31 +49,9 @@ Partial Class Principal
         'ToolStrip1
         '
         resources.ApplyResources(Me.ToolStrip1, "ToolStrip1")
-        Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSplitButton1, Me.ToolStripSplitButton2, Me.ToolStripButton1})
+        Me.ToolStrip1.BackColor = System.Drawing.Color.Black
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripSplitButton2, Me.ToolStripButton1})
         Me.ToolStrip1.Name = "ToolStrip1"
-        '
-        'ToolStripSplitButton1
-        '
-        resources.ApplyResources(Me.ToolStripSplitButton1, "ToolStripSplitButton1")
-        Me.ToolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripSplitButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConfiguraciónBrokerToolStripMenuItem, Me.ConfiguraciónDeDispositivoToolStripMenuItem, Me.SalirToolStripMenuItem})
-        Me.ToolStripSplitButton1.Name = "ToolStripSplitButton1"
-        '
-        'ConfiguraciónBrokerToolStripMenuItem
-        '
-        resources.ApplyResources(Me.ConfiguraciónBrokerToolStripMenuItem, "ConfiguraciónBrokerToolStripMenuItem")
-        Me.ConfiguraciónBrokerToolStripMenuItem.Name = "ConfiguraciónBrokerToolStripMenuItem"
-        '
-        'ConfiguraciónDeDispositivoToolStripMenuItem
-        '
-        resources.ApplyResources(Me.ConfiguraciónDeDispositivoToolStripMenuItem, "ConfiguraciónDeDispositivoToolStripMenuItem")
-        Me.ConfiguraciónDeDispositivoToolStripMenuItem.Name = "ConfiguraciónDeDispositivoToolStripMenuItem"
-        '
-        'SalirToolStripMenuItem
-        '
-        resources.ApplyResources(Me.SalirToolStripMenuItem, "SalirToolStripMenuItem")
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         '
         'ToolStripSplitButton2
         '
@@ -109,36 +84,44 @@ Partial Class Principal
         'StatusStrip1
         '
         resources.ApplyResources(Me.StatusStrip1, "StatusStrip1")
-        Me.StatusStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.StatusStrip1.BackColor = System.Drawing.Color.Black
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.LB_Internet, Me.ToolStripStatusLabel3, Me.LB_Fecha})
         Me.StatusStrip1.Name = "StatusStrip1"
         '
         'ToolStripStatusLabel1
         '
         resources.ApplyResources(Me.ToolStripStatusLabel1, "ToolStripStatusLabel1")
-        Me.ToolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ToolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         '
         'LB_Internet
         '
         resources.ApplyResources(Me.LB_Internet, "LB_Internet")
+        Me.LB_Internet.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.LB_Internet.Name = "LB_Internet"
         '
         'ToolStripStatusLabel3
         '
         resources.ApplyResources(Me.ToolStripStatusLabel3, "ToolStripStatusLabel3")
-        Me.ToolStripStatusLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ToolStripStatusLabel3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
         '
         'LB_Fecha
         '
         resources.ApplyResources(Me.LB_Fecha, "LB_Fecha")
+        Me.LB_Fecha.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.LB_Fecha.Name = "LB_Fecha"
         '
         'TimerValidacion
         '
         Me.TimerValidacion.Enabled = True
         Me.TimerValidacion.Interval = 1000
+        '
+        'ToolStripButton2
+        '
+        resources.ApplyResources(Me.ToolStripButton2, "ToolStripButton2")
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Name = "ToolStripButton2"
         '
         'Principal
         '
@@ -162,19 +145,16 @@ Partial Class Principal
 
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripSplitButton1 As ToolStripSplitButton
-    Friend WithEvents ConfiguraciónBrokerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents LB_Internet As ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel3 As ToolStripStatusLabel
     Friend WithEvents LB_Fecha As ToolStripStatusLabel
     Friend WithEvents TimerValidacion As Timer
-    Friend WithEvents ConfiguraciónDeDispositivoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSplitButton2 As ToolStripSplitButton
     Friend WithEvents HistoricosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GráficosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents ToolStripButton2 As ToolStripButton
 End Class

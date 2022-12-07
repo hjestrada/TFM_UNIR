@@ -16,7 +16,7 @@ Public Class Conf_Broker
 
     Private Sub Conf_Broker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GetSerialPortNames()
-
+        TopicosAleatorios()
         ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
@@ -138,6 +138,7 @@ Public Class Conf_Broker
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Try
+
             Setup_Puerto_Serie()
 
         Catch ex As Exception
@@ -147,6 +148,7 @@ Public Class Conf_Broker
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         TopicosAleatorios()
+        MsgBox("Nuevos tópicos generados", MsgBoxStyle.Information)
     End Sub
 
 
@@ -157,7 +159,11 @@ Public Class Conf_Broker
 
         TextBox5.Text = aleatorio + "/Zona2" + "/Temperatura"
         TextBox2.Text = aleatorio + "/Zona2" + "/Humedad"
-        MsgBox("Nuevos tópicos generados", MsgBoxStyle.Information)
+
+        TextBox9.Text = aleatorio + "/Zona1" + "/Actuador1"
+        TextBox8.Text = aleatorio + "/Zona2" + "/Actuador2"
+
+        ' 
     End Sub
 
 
@@ -182,4 +188,22 @@ Public Class Conf_Broker
 
         GenerateCode = strName
     End Function
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If SerialPort1.IsOpen Then
+            Label12.Text = "Conectado"
+            Label12.ForeColor = Color.White
+            Label12.BackColor = Color.DarkGreen
+        Else
+
+            Label12.Text = "Desconectado"
+            Label12.ForeColor = Color.White
+            Label12.BackColor = Color.DarkRed
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SerialPort1.Close()
+
+    End Sub
 End Class

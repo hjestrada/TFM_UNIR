@@ -8,7 +8,7 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("VbMQTT")>
+<Assembly: AssemblyTitle("TFM_UNIR")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("VbMQTT")>
