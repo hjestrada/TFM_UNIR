@@ -34,4 +34,9 @@ Public Class Principal
         Dashboard.MdiParent = Me
         Dashboard.Show()
     End Sub
+
+    Private Sub ConfiguraciónBrokerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConfiguraciónBrokerToolStripMenuItem.Click
+        Conf_Broker.MdiParent = Me
+        Conf_Broker.Show()
+    End Sub
 End Class

@@ -3,7 +3,7 @@
         Me.Close()
     End Sub
 
-    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
 
     End Sub

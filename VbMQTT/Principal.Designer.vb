@@ -34,13 +34,13 @@ Partial Class Principal
         Me.HistoricosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GráficosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.LB_Internet = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.LB_Fecha = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TimerValidacion = New System.Windows.Forms.Timer(Me.components)
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -100,6 +100,12 @@ Partial Class Principal
         resources.ApplyResources(Me.ReportesToolStripMenuItem, "ReportesToolStripMenuItem")
         Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
         '
+        'ToolStripButton1
+        '
+        resources.ApplyResources(Me.ToolStripButton1, "ToolStripButton1")
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        '
         'StatusStrip1
         '
         resources.ApplyResources(Me.StatusStrip1, "StatusStrip1")
@@ -133,12 +139,6 @@ Partial Class Principal
         '
         Me.TimerValidacion.Enabled = True
         Me.TimerValidacion.Interval = 1000
-        '
-        'ToolStripButton1
-        '
-        resources.ApplyResources(Me.ToolStripButton1, "ToolStripButton1")
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Name = "ToolStripButton1"
         '
         'Principal
         '
