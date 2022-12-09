@@ -34,8 +34,8 @@ void reconnect();
 #define TOKEN ""
 #define DEVICEID "SAVA"
 
-const char* ssid = "CODETIC HOGAR";
-char* password = "1004417958";
+const char* ssid = "NODO 1_TECNOPARQUE"; //NODO 1_TECNOPARQUE //CODETIC HOGAR
+char* password = "Tecnoparque789*"; //Tecnoparque789* //1004417958
 char mqtt_server[] = "broker.hivemq.com";
 
 char publishTopic1[] = "qo41v3uchl/Zona1/Temperatura";
@@ -62,7 +62,7 @@ void setup_wifi() {
   while (WiFi.status() != WL_CONNECTED) {
 
     // delay(1);
-    Serial.print(".");
+    Serial.println(".");
     digitalWrite(led, LOW);
   }
 
@@ -95,6 +95,9 @@ void reconnect() {
 }
 
 void setup() {
+
+
+
   pinMode(led, OUTPUT);
   pinMode(Salida1, OUTPUT);
   pinMode(Salida2, OUTPUT);
@@ -113,6 +116,19 @@ void setup() {
     Serial.println("Falló al Inicializar SD card");
     return;
   }
+  //---------------------------------------------
+  myFile = SD.open("wifi.txt");//abrimos  el archivo
+  if (myFile) {
+    Serial.println("wifi.txt:");
+    while (myFile.available()) {
+      Serial.write(myFile.read());
+    }
+    myFile.close(); //cerramos el archivo
+  } else {
+    Serial.println("Error al abrir el archivo");
+  }
+  //---------------------------------------------
+
 }
 
 void loop() {
