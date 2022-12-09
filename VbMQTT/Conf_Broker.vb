@@ -32,7 +32,7 @@ Public Class Conf_Broker
                 client.Connect(clientId)
 
                 If client.IsConnected Then
-                    ComboBox2.SelectedIndex = 0
+                    ' ComboBox2.SelectedIndex = 0
                     ToolStripStatusLabel2.Text = TextBox1.Text
                     ToolStripStatusLabel2.ForeColor = Color.White
                     ToolStripStatusLabel2.BackColor = Color.DarkGreen
@@ -44,10 +44,10 @@ Public Class Conf_Broker
 
             Catch ex As Exception
 
-                ToolStripStatusLabel2.Text = "Error"
+                ToolStripStatusLabel2.Text = ex.Message()
                 ToolStripStatusLabel2.ForeColor = Color.White
                 ToolStripStatusLabel2.BackColor = Color.DarkRed
-                MsgBox(ex.Message(), MsgBoxStyle.Critical)
+                ' MsgBox(ex.Message(), MsgBoxStyle.Critical)
             End Try
         Else
             ToolStripStatusLabel2.Text = "Por favor Ingrese un broker Válido "
@@ -160,8 +160,8 @@ Public Class Conf_Broker
         TextBox5.Text = aleatorio + "/Zona2" + "/Temperatura"
         TextBox2.Text = aleatorio + "/Zona2" + "/Humedad"
 
-        TextBox9.Text = aleatorio + "/Zona1" + "/Actuador1"
-        TextBox8.Text = aleatorio + "/Zona2" + "/Actuador2"
+        TextBox9.Text = aleatorio + "/Actuador/" + "AC1"
+        TextBox8.Text = aleatorio + "/Actuador/" + "AC2"
 
         ' 
     End Sub
