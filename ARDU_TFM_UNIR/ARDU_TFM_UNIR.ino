@@ -7,12 +7,9 @@
 #include "avr/dtostrf.h"
 #include <SD.h>
 
-//----------https://forum.arduino.cc/t/esp32-gestion-de-ssid-pase-wifi/1023298/2-------
-
 File myFile;
 int pinCS = 10;  // Pin 10 Arduino Nano 33 IoT
 
-//-----------------
 #define dataPin 3
 #define clockPin 2
 SHT1x sht1x(dataPin, clockPin);
@@ -34,9 +31,9 @@ void reconnect();
 #define TOKEN ""
 #define DEVICEID "SAVA"
 
-const char* ssid = "NODO 1_TECNOPARQUE"; //NODO 1_TECNOPARQUE //CODETIC HOGAR
-char* password = "Tecnoparque789*"; //Tecnoparque789* //1004417958
-char mqtt_server[] = "broker.hivemq.com";
+const char* ssid = "Familia Murillo";      //Ingresar SSID de la red wifi
+char* password = "17156673"; //Ingresar SSID de la red wifi
+char mqtt_server[] = "broker.hivemq.com";//Ingresar broker mqtt.
 
 char publishTopic1[] = "qo41v3uchl/Zona1/Temperatura";
 char publishTopic2[] = "qo41v3uchl/Zona1/Humedad";
@@ -52,16 +49,12 @@ PubSubClient mqtt(wifiClient);
 
 
 void setup_wifi() {
-
-  // delay(1);
   Serial.println();
   Serial.print("Conectando a: ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
-
-    // delay(1);
     Serial.println(".");
     digitalWrite(led, LOW);
   }
@@ -132,18 +125,13 @@ void setup() {
 }
 
 void loop() {
-
   ConfigApp();
   Actuadores();
-
   if (!mqtt.connected()) {
     reconnect();
   }
-
   mqtt.loop();
   mqtt.subscribe(topicAct);
-
-
   float temp_c;
   float humidity;
   float temp_c2;
@@ -203,7 +191,6 @@ void Actuadores() {
 
   Serial.println(dataAct);
 }
-
 
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Mensaje Recibido[");
