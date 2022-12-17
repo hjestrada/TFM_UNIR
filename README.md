@@ -5,7 +5,8 @@ Actualmente, la falta de infraestructura moderna y adecuada a la capacidad produ
 Por lo tanto, es necesario analizar qué dispositivos y qué arquitectura IoT es la adecuada para dar una solución de calidad y a un coste que pueda ser asumido por los caficultores.
 
 
-![alt text](https://raw.githubusercontent.com/hjestrada/TFM_UNIR/edit/master/DOCUMENTACION/Imagenes/Modelo%20PCB.png)
+![alt text](https://raw.githubusercontent.com/hjestrada/TFM_UNIR/blob/master/DOCUMENTACION/Imagenes/Modelo%20PCB.png)
+
 
 ## Authors
 
