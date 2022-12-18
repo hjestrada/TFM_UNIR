@@ -23,15 +23,22 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.BT_Stop = New System.Windows.Forms.Button()
         Me.BT_Play = New System.Windows.Forms.Button()
@@ -66,14 +73,11 @@ Partial Class Dashboard
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -88,10 +92,6 @@ Partial Class Dashboard
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox7.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox8.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -107,6 +107,80 @@ Partial Class Dashboard
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1265, 137)
         Me.Panel1.TabIndex = 5
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Controls.Add(Me.Label11)
+        Me.GroupBox8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox8.Location = New System.Drawing.Point(3, 5)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(97, 129)
+        Me.GroupBox8.TabIndex = 9
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "Consecutivo"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(9, 51)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(58, 21)
+        Me.Label11.TabIndex = 6
+        Me.Label11.Text = "--------"
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.Controls.Add(Me.Label10)
+        Me.GroupBox7.Controls.Add(Me.Label9)
+        Me.GroupBox7.Controls.Add(Me.NumericUpDown2)
+        Me.GroupBox7.Controls.Add(Me.NumericUpDown1)
+        Me.GroupBox7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox7.Location = New System.Drawing.Point(916, 5)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(144, 129)
+        Me.GroupBox7.TabIndex = 8
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "Setpoint"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(6, 79)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(72, 34)
+        Me.Label10.TabIndex = 5
+        Me.Label10.Text = "Humedad" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "máxima(%)"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 25)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(82, 34)
+        Me.Label9.TabIndex = 4
+        Me.Label9.Text = "Temperatura" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "máxima(°C)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Location = New System.Drawing.Point(87, 84)
+        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {20, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.ReadOnly = True
+        Me.NumericUpDown2.Size = New System.Drawing.Size(51, 25)
+        Me.NumericUpDown2.TabIndex = 1
+        Me.NumericUpDown2.Value = New Decimal(New Integer() {20, 0, 0, 0})
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(87, 34)
+        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {20, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.ReadOnly = True
+        Me.NumericUpDown1.Size = New System.Drawing.Size(51, 25)
+        Me.NumericUpDown1.TabIndex = 0
+        Me.NumericUpDown1.Value = New Decimal(New Integer() {20, 0, 0, 0})
         '
         'GroupBox3
         '
@@ -156,7 +230,7 @@ Partial Class Dashboard
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2327!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7673!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 1, 0)
@@ -178,9 +252,9 @@ Partial Class Dashboard
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label5.Location = New System.Drawing.Point(313, 44)
+        Me.Label5.Location = New System.Drawing.Point(312, 44)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 44)
+        Me.Label5.Size = New System.Drawing.Size(64, 44)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "%"
         '
@@ -203,7 +277,7 @@ Partial Class Dashboard
         Me.TextBox3.Location = New System.Drawing.Point(180, 3)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(127, 35)
+        Me.TextBox3.Size = New System.Drawing.Size(126, 35)
         Me.TextBox3.TabIndex = 0
         '
         'TextBox4
@@ -213,7 +287,7 @@ Partial Class Dashboard
         Me.TextBox4.Location = New System.Drawing.Point(180, 47)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(127, 35)
+        Me.TextBox4.Size = New System.Drawing.Size(126, 35)
         Me.TextBox4.TabIndex = 2
         '
         'Label7
@@ -234,9 +308,9 @@ Partial Class Dashboard
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.Location = New System.Drawing.Point(313, 0)
+        Me.Label8.Location = New System.Drawing.Point(312, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(63, 44)
+        Me.Label8.Size = New System.Drawing.Size(64, 44)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "°C"
         '
@@ -256,7 +330,7 @@ Partial Class Dashboard
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2327!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7673!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 2, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 1, 0)
@@ -278,9 +352,9 @@ Partial Class Dashboard
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(313, 44)
+        Me.Label4.Location = New System.Drawing.Point(312, 44)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(63, 44)
+        Me.Label4.Size = New System.Drawing.Size(64, 44)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "%"
         '
@@ -303,7 +377,7 @@ Partial Class Dashboard
         Me.TextBox1.Location = New System.Drawing.Point(180, 3)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(127, 35)
+        Me.TextBox1.Size = New System.Drawing.Size(126, 35)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
@@ -313,7 +387,7 @@ Partial Class Dashboard
         Me.TextBox2.Location = New System.Drawing.Point(180, 47)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(127, 35)
+        Me.TextBox2.Size = New System.Drawing.Size(126, 35)
         Me.TextBox2.TabIndex = 2
         '
         'Label1
@@ -334,9 +408,9 @@ Partial Class Dashboard
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Location = New System.Drawing.Point(313, 0)
+        Me.Label3.Location = New System.Drawing.Point(312, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 44)
+        Me.Label3.Size = New System.Drawing.Size(64, 44)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "°C"
         '
@@ -490,129 +564,55 @@ Partial Class Dashboard
         '
         'Chart2
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea3)
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea1)
         Me.Chart2.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend3.Name = "Temperatura"
-        Me.Chart2.Legends.Add(Legend3)
+        Legend1.Name = "Temperatura"
+        Me.Chart2.Legends.Add(Legend1)
         Me.Chart2.Location = New System.Drawing.Point(529, 3)
         Me.Chart2.Name = "Chart2"
-        Series5.BorderWidth = 5
-        Series5.ChartArea = "ChartArea1"
-        Series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series5.Legend = "Temperatura"
-        Series5.MarkerBorderWidth = 10
-        Series5.Name = "Temperatura"
-        Series6.BorderWidth = 5
-        Series6.ChartArea = "ChartArea1"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series6.Legend = "Temperatura"
-        Series6.Name = "Humedad"
-        Me.Chart2.Series.Add(Series5)
-        Me.Chart2.Series.Add(Series6)
+        Series1.BorderWidth = 5
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series1.Legend = "Temperatura"
+        Series1.MarkerBorderWidth = 10
+        Series1.Name = "Temperatura"
+        Series2.BorderWidth = 5
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series2.Legend = "Temperatura"
+        Series2.Name = "Humedad"
+        Me.Chart2.Series.Add(Series1)
+        Me.Chart2.Series.Add(Series2)
         Me.Chart2.Size = New System.Drawing.Size(520, 405)
         Me.Chart2.TabIndex = 1
         Me.Chart2.Text = "Chart2"
         '
         'Chart1
         '
-        ChartArea4.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea4)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
         Me.Chart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend4.Name = "Temperatura"
-        Me.Chart1.Legends.Add(Legend4)
+        Legend2.Name = "Temperatura"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(3, 3)
         Me.Chart1.Name = "Chart1"
-        Series7.BorderWidth = 5
-        Series7.ChartArea = "ChartArea1"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series7.Legend = "Temperatura"
-        Series7.MarkerBorderWidth = 10
-        Series7.Name = "Temperatura"
-        Series8.BorderWidth = 5
-        Series8.ChartArea = "ChartArea1"
-        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series8.Legend = "Temperatura"
-        Series8.Name = "Humedad"
-        Me.Chart1.Series.Add(Series7)
-        Me.Chart1.Series.Add(Series8)
+        Series3.BorderWidth = 5
+        Series3.ChartArea = "ChartArea1"
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series3.Legend = "Temperatura"
+        Series3.MarkerBorderWidth = 10
+        Series3.Name = "Temperatura"
+        Series4.BorderWidth = 5
+        Series4.ChartArea = "ChartArea1"
+        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series4.Legend = "Temperatura"
+        Series4.Name = "Humedad"
+        Me.Chart1.Series.Add(Series3)
+        Me.Chart1.Series.Add(Series4)
         Me.Chart1.Size = New System.Drawing.Size(520, 405)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
-        '
-        'GroupBox7
-        '
-        Me.GroupBox7.Controls.Add(Me.Label10)
-        Me.GroupBox7.Controls.Add(Me.Label9)
-        Me.GroupBox7.Controls.Add(Me.NumericUpDown2)
-        Me.GroupBox7.Controls.Add(Me.NumericUpDown1)
-        Me.GroupBox7.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox7.Location = New System.Drawing.Point(916, 5)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(144, 129)
-        Me.GroupBox7.TabIndex = 8
-        Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "Setpoint"
-        '
-        'NumericUpDown1
-        '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(87, 34)
-        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {20, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.ReadOnly = True
-        Me.NumericUpDown1.Size = New System.Drawing.Size(51, 25)
-        Me.NumericUpDown1.TabIndex = 0
-        Me.NumericUpDown1.Value = New Decimal(New Integer() {20, 0, 0, 0})
-        '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(87, 84)
-        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {20, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.ReadOnly = True
-        Me.NumericUpDown2.Size = New System.Drawing.Size(51, 25)
-        Me.NumericUpDown2.TabIndex = 1
-        Me.NumericUpDown2.Value = New Decimal(New Integer() {20, 0, 0, 0})
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 25)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(82, 34)
-        Me.Label9.TabIndex = 4
-        Me.Label9.Text = "Temperatura" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "máxima(°C)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(6, 79)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(72, 34)
-        Me.Label10.TabIndex = 5
-        Me.Label10.Text = "Humedad" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "máxima(%)"
-        '
-        'GroupBox8
-        '
-        Me.GroupBox8.Controls.Add(Me.Label11)
-        Me.GroupBox8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox8.Location = New System.Drawing.Point(3, 5)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(97, 129)
-        Me.GroupBox8.TabIndex = 9
-        Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "Consecutivo"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(9, 51)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 21)
-        Me.Label11.TabIndex = 6
-        Me.Label11.Text = "--------"
         '
         'Dashboard
         '
@@ -630,6 +630,12 @@ Partial Class Dashboard
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Monitor"
         Me.Panel1.ResumeLayout(False)
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
@@ -647,12 +653,6 @@ Partial Class Dashboard
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox7.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox8.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

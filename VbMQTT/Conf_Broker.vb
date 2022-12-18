@@ -34,10 +34,20 @@ Public Class Conf_Broker
                     ToolStripStatusLabel2.Text = TextBox1.Text
                     ToolStripStatusLabel2.ForeColor = Color.White
                     ToolStripStatusLabel2.BackColor = Color.DarkGreen
+
+                    Dashboard.ToolStripStatusLabel2.Text = TextBox1.Text
+                    Dashboard.ToolStripStatusLabel2.ForeColor = Color.White
+                    Dashboard.ToolStripStatusLabel2.BackColor = Color.DarkGreen
+
                 Else
-                    ToolStripStatusLabel2.Text = "Desconectado"
+                    ToolStripStatusLabel2.Text = "---"
                     ToolStripStatusLabel2.ForeColor = Color.White
                     ToolStripStatusLabel2.BackColor = Color.DarkRed
+
+                    Dashboard.ToolStripStatusLabel2.Text = "---"
+                    Dashboard.ToolStripStatusLabel2.ForeColor = Color.White
+                    Dashboard.ToolStripStatusLabel2.BackColor = Color.DarkRed
+
                 End If
 
             Catch ex As Exception
@@ -45,7 +55,11 @@ Public Class Conf_Broker
                 ToolStripStatusLabel2.Text = ex.Message()
                 ToolStripStatusLabel2.ForeColor = Color.White
                 ToolStripStatusLabel2.BackColor = Color.DarkRed
-                ' MsgBox(ex.Message(), MsgBoxStyle.Critical)
+
+                Dashboard.ToolStripStatusLabel2.Text = ex.Message()
+                Dashboard.ToolStripStatusLabel2.ForeColor = Color.White
+                Dashboard.ToolStripStatusLabel2.BackColor = Color.DarkRed
+
             End Try
         Else
             ToolStripStatusLabel2.Text = "Por favor Ingrese un broker Válido "
