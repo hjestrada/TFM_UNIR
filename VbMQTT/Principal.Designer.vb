@@ -26,6 +26,7 @@ Partial Class Principal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSplitButton2 = New System.Windows.Forms.ToolStripSplitButton()
         Me.HistoricosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GráficosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -37,7 +38,6 @@ Partial Class Principal
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.LB_Fecha = New System.Windows.Forms.ToolStripStatusLabel()
         Me.TimerValidacion = New System.Windows.Forms.Timer(Me.components)
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -52,6 +52,12 @@ Partial Class Principal
         Me.ToolStrip1.BackColor = System.Drawing.Color.Black
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripSplitButton2, Me.ToolStripButton1})
         Me.ToolStrip1.Name = "ToolStrip1"
+        '
+        'ToolStripButton2
+        '
+        resources.ApplyResources(Me.ToolStripButton2, "ToolStripButton2")
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Name = "ToolStripButton2"
         '
         'ToolStripSplitButton2
         '
@@ -117,12 +123,6 @@ Partial Class Principal
         Me.TimerValidacion.Enabled = True
         Me.TimerValidacion.Interval = 1000
         '
-        'ToolStripButton2
-        '
-        resources.ApplyResources(Me.ToolStripButton2, "ToolStripButton2")
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        '
         'Principal
         '
         resources.ApplyResources(Me, "$this")
@@ -130,6 +130,7 @@ Partial Class Principal
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.IsMdiContainer = True
         Me.Name = "Principal"

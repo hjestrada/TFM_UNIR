@@ -15,9 +15,7 @@ Public Class Conf_Broker
     End Sub
 
     Private Sub Conf_Broker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        GetSerialPortNames()
-        TopicosAleatorios()
-        ComboBox3.DropDownStyle = ComboBoxStyle.DropDownList
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -76,95 +74,9 @@ Public Class Conf_Broker
         End If
     End Sub
 
-    Sub GetSerialPortNames()
-
-        ' muestra COM ports disponibles.
-        Dim l As Integer
-        Dim ncom As String
-        Try
-            ComboBox3.Items.Clear()
-            For Each sp As String In My.Computer.Ports.SerialPortNames
-                l = sp.Length
-
-                If ((sp(l - 1) >= "0") And (sp(l - 1) <= "9")) Then
-                    ComboBox3.Items.Add(sp)
-                Else
-                    'hay una letra al final del COM
-                    ncom = sp.Substring(0, l - 1)
-                    ComboBox3.Items.Add(ncom)
-                End If
-            Next
-            If ComboBox3.Items.Count >= 1 Then
-                ComboBox3.Text = ComboBox3.Items(0)
-            Else
-                ComboBox3.Text = ""
-            End If
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
-
-    Sub Setup_Puerto_Serie()
-
-        Try
-            With SerialPort1
-                If .IsOpen Then
-                    .Close()
-
-                End If
-
-                .PortName = ComboBox3.Text
-                .BaudRate = 9600
-                .DataBits = 8
-                .StopBits = IO.Ports.StopBits.One
-                .Parity = IO.Ports.Parity.None
-                .DtrEnable = False
-                .Handshake = IO.Ports.Handshake.None
-                .ReadBufferSize = 2048
-                .WriteBufferSize = 1024
-
-                .WriteTimeout = 500
-                .Encoding = System.Text.Encoding.Default
-
-                .Open() ' ABRE EL PUERTO SERIE
-
-            End With
-
-        Catch ex As Exception
-            MsgBox("Error al abrir el puerto serial: " & ex.Message, MsgBoxStyle.Critical)
-        End Try
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Try
-
-            Setup_Puerto_Serie()
-
-        Catch ex As Exception
-            MsgBox("Error al abrir el puerto serial: " & ex.Message, MsgBoxStyle.Critical)
-        End Try
-    End Sub
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        TopicosAleatorios()
-        MsgBox("Nuevos tópicos generados", MsgBoxStyle.Information)
-    End Sub
 
 
-    Sub TopicosAleatorios()
-        Dim aleatorio As String = GenerateCode()
-        TextBox4.Text = aleatorio + "/Zona1" + "/Temperatura"
-        TextBox3.Text = aleatorio + "/Zona1" + "/Humedad"
 
-        TextBox5.Text = aleatorio + "/Zona2" + "/Temperatura"
-        TextBox2.Text = aleatorio + "/Zona2" + "/Humedad"
-
-        TextBox9.Text = aleatorio + "/Actuador/" + "AC1"
-        TextBox8.Text = aleatorio + "/Actuador/" + "AC2"
-
-        ' 
-    End Sub
 
 
 
@@ -189,21 +101,14 @@ Public Class Conf_Broker
         GenerateCode = strName
     End Function
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        If SerialPort1.IsOpen Then
-            Label12.Text = "Conectado"
-            Label12.ForeColor = Color.White
-            Label12.BackColor = Color.DarkGreen
-        Else
 
-            Label12.Text = "Desconectado"
-            Label12.ForeColor = Color.White
-            Label12.BackColor = Color.DarkRed
-        End If
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
+        SerialPort1.Close()
+
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        SerialPort1.Close()
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
