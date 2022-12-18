@@ -126,9 +126,9 @@ Partial Class Dashboard
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(9, 51)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(58, 21)
+        Me.Label11.Size = New System.Drawing.Size(16, 21)
         Me.Label11.TabIndex = 6
-        Me.Label11.Text = "--------"
+        Me.Label11.Text = "1"
         '
         'GroupBox7
         '
@@ -230,7 +230,7 @@ Partial Class Dashboard
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2327!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7673!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 1, 0)
@@ -252,9 +252,9 @@ Partial Class Dashboard
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label5.Location = New System.Drawing.Point(312, 44)
+        Me.Label5.Location = New System.Drawing.Point(311, 44)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 44)
+        Me.Label5.Size = New System.Drawing.Size(65, 44)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "%"
         '
@@ -266,7 +266,7 @@ Partial Class Dashboard
         Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label6.Location = New System.Drawing.Point(3, 44)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(171, 44)
+        Me.Label6.Size = New System.Drawing.Size(170, 44)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Humedad"
         '
@@ -274,21 +274,23 @@ Partial Class Dashboard
         '
         Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(180, 3)
+        Me.TextBox3.Location = New System.Drawing.Point(179, 3)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(126, 35)
         Me.TextBox3.TabIndex = 0
+        Me.TextBox3.Text = "26.7"
         '
         'TextBox4
         '
         Me.TextBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(180, 47)
+        Me.TextBox4.Location = New System.Drawing.Point(179, 47)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(126, 35)
         Me.TextBox4.TabIndex = 2
+        Me.TextBox4.Text = "55"
         '
         'Label7
         '
@@ -298,7 +300,7 @@ Partial Class Dashboard
         Me.Label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label7.Location = New System.Drawing.Point(3, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(171, 44)
+        Me.Label7.Size = New System.Drawing.Size(170, 44)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Temperatura"
         '
@@ -308,9 +310,9 @@ Partial Class Dashboard
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.Location = New System.Drawing.Point(312, 0)
+        Me.Label8.Location = New System.Drawing.Point(311, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 44)
+        Me.Label8.Size = New System.Drawing.Size(65, 44)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "°C"
         '
@@ -330,7 +332,7 @@ Partial Class Dashboard
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2327!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7673!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 2, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 1, 0)
@@ -352,9 +354,9 @@ Partial Class Dashboard
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(312, 44)
+        Me.Label4.Location = New System.Drawing.Point(311, 44)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 44)
+        Me.Label4.Size = New System.Drawing.Size(65, 44)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "%"
         '
@@ -366,7 +368,7 @@ Partial Class Dashboard
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(3, 44)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(171, 44)
+        Me.Label2.Size = New System.Drawing.Size(170, 44)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Humedad"
         '
@@ -374,21 +376,23 @@ Partial Class Dashboard
         '
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(180, 3)
+        Me.TextBox1.Location = New System.Drawing.Point(179, 3)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(126, 35)
         Me.TextBox1.TabIndex = 0
+        Me.TextBox1.Text = "26.1"
         '
         'TextBox2
         '
         Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(180, 47)
+        Me.TextBox2.Location = New System.Drawing.Point(179, 47)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(126, 35)
         Me.TextBox2.TabIndex = 2
+        Me.TextBox2.Text = "50"
         '
         'Label1
         '
@@ -398,7 +402,7 @@ Partial Class Dashboard
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(171, 44)
+        Me.Label1.Size = New System.Drawing.Size(170, 44)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Temperatura"
         '
@@ -408,9 +412,9 @@ Partial Class Dashboard
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Location = New System.Drawing.Point(312, 0)
+        Me.Label3.Location = New System.Drawing.Point(311, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 44)
+        Me.Label3.Size = New System.Drawing.Size(65, 44)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "°C"
         '
