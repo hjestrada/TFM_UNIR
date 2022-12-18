@@ -31,10 +31,13 @@ void reconnect();
 #define TOKEN ""
 #define DEVICEID "SAVACOFFEE"
 
-const char* ssid = "Familia Murillo";      //Ingresar SSID de la red wifi
-char* password = "17156673"; //Ingresar SSID de la red wifi
-char mqtt_server[] = "broker.hivemq.com";//Ingresar broker mqtt.
-//e122e9d8165c4e058ab2f6dba07b4aa2.s1.eu.hivemq.cloud
+const char* ssid = "Familia Murillo";         //Ingresar SSID de la red wifi
+char* password = "17156673";                  //Ingresar contraseña de la red wifi
+
+char mqtt_server[] = "broker.hivemq.com";     //Ingresar broker mqtt.
+int puertoMQTT = 1883;                    //Ingresar puerto mqtt.
+
+
 char publishTopic1[] = "qo41v3uchl/Zona1/Temperatura";
 char publishTopic2[] = "qo41v3uchl/Zona1/Humedad";
 char publishTopic3[] = "qo41v3uchl/Zona2/Temperatura";
@@ -79,7 +82,7 @@ void reconnect() {
 
     else {
       Serial.print("Falló la Conexión, reconectando=");
-      Serial.print(mqtt.state());
+      Serial.println(mqtt.state());
       Serial.println("Intentandolo de nuevo en 5 seg.");
       digitalWrite(LedInterno, LOW);
       //delay(1);
@@ -99,7 +102,7 @@ void setup() {
 
   Serial.begin(9600);
   setup_wifi();
-  mqtt.setServer(mqtt_server, 1883); //1883
+  mqtt.setServer(mqtt_server, puertoMQTT); //1883
   mqtt.setCallback(callback);
 
   // Inicialización SD
@@ -118,7 +121,7 @@ void setup() {
     }
     myFile.close(); //cerramos el archivo
   } else {
-    Serial.println("Error al abrir el archivo");
+    Serial.println("Error al abrir el archivo *.txt");
   }
   //---------------------------------------------
 
