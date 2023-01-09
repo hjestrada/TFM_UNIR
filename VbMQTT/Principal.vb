@@ -27,6 +27,9 @@ Public Class Principal
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TimerValidacion.Start()
+        SetStyle(ControlStyles.OptimizedDoubleBuffer, True)
+        Dashboard.MdiParent = Me
+        Dashboard.Show()
     End Sub
 
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs)

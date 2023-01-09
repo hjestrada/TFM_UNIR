@@ -23,14 +23,14 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series11 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series12 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.GroupBox8 = New System.Windows.Forms.GroupBox()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -230,7 +230,7 @@ Partial Class Dashboard
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2327!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7673!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 1, 0)
@@ -252,9 +252,9 @@ Partial Class Dashboard
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label5.Location = New System.Drawing.Point(311, 44)
+        Me.Label5.Location = New System.Drawing.Point(310, 44)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 44)
+        Me.Label5.Size = New System.Drawing.Size(66, 44)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "%"
         '
@@ -277,7 +277,7 @@ Partial Class Dashboard
         Me.TextBox3.Location = New System.Drawing.Point(179, 3)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(126, 35)
+        Me.TextBox3.Size = New System.Drawing.Size(125, 35)
         Me.TextBox3.TabIndex = 0
         Me.TextBox3.Text = "26.7"
         '
@@ -288,7 +288,7 @@ Partial Class Dashboard
         Me.TextBox4.Location = New System.Drawing.Point(179, 47)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(126, 35)
+        Me.TextBox4.Size = New System.Drawing.Size(125, 35)
         Me.TextBox4.TabIndex = 2
         Me.TextBox4.Text = "55"
         '
@@ -310,9 +310,9 @@ Partial Class Dashboard
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.Location = New System.Drawing.Point(311, 0)
+        Me.Label8.Location = New System.Drawing.Point(310, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 44)
+        Me.Label8.Size = New System.Drawing.Size(66, 44)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "°C"
         '
@@ -332,7 +332,7 @@ Partial Class Dashboard
         Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.2327!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.7673!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label4, 2, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 1, 0)
@@ -354,9 +354,9 @@ Partial Class Dashboard
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(311, 44)
+        Me.Label4.Location = New System.Drawing.Point(310, 44)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 44)
+        Me.Label4.Size = New System.Drawing.Size(66, 44)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "%"
         '
@@ -379,7 +379,7 @@ Partial Class Dashboard
         Me.TextBox1.Location = New System.Drawing.Point(179, 3)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(126, 35)
+        Me.TextBox1.Size = New System.Drawing.Size(125, 35)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = "26.1"
         '
@@ -390,7 +390,7 @@ Partial Class Dashboard
         Me.TextBox2.Location = New System.Drawing.Point(179, 47)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(126, 35)
+        Me.TextBox2.Size = New System.Drawing.Size(125, 35)
         Me.TextBox2.TabIndex = 2
         Me.TextBox2.Text = "50"
         '
@@ -412,9 +412,9 @@ Partial Class Dashboard
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label3.Location = New System.Drawing.Point(311, 0)
+        Me.Label3.Location = New System.Drawing.Point(310, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 44)
+        Me.Label3.Size = New System.Drawing.Size(66, 44)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "°C"
         '
@@ -433,7 +433,7 @@ Partial Class Dashboard
         Me.ToolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(117, 17)
-        Me.ToolStripStatusLabel1.Text = "Conectado al tópico:"
+        Me.ToolStripStatusLabel1.Text = "Conectado al Broker:"
         '
         'ToolStripStatusLabel2
         '
@@ -568,52 +568,52 @@ Partial Class Dashboard
         '
         'Chart2
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea1)
+        ChartArea5.Name = "ChartArea1"
+        Me.Chart2.ChartAreas.Add(ChartArea5)
         Me.Chart2.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend1.Name = "Temperatura"
-        Me.Chart2.Legends.Add(Legend1)
+        Legend5.Name = "Temperatura"
+        Me.Chart2.Legends.Add(Legend5)
         Me.Chart2.Location = New System.Drawing.Point(529, 3)
         Me.Chart2.Name = "Chart2"
-        Series1.BorderWidth = 5
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series1.Legend = "Temperatura"
-        Series1.MarkerBorderWidth = 10
-        Series1.Name = "Temperatura"
-        Series2.BorderWidth = 5
-        Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series2.Legend = "Temperatura"
-        Series2.Name = "Humedad"
-        Me.Chart2.Series.Add(Series1)
-        Me.Chart2.Series.Add(Series2)
+        Series9.BorderWidth = 5
+        Series9.ChartArea = "ChartArea1"
+        Series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series9.Legend = "Temperatura"
+        Series9.MarkerBorderWidth = 10
+        Series9.Name = "Temperatura"
+        Series10.BorderWidth = 5
+        Series10.ChartArea = "ChartArea1"
+        Series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series10.Legend = "Temperatura"
+        Series10.Name = "Humedad"
+        Me.Chart2.Series.Add(Series9)
+        Me.Chart2.Series.Add(Series10)
         Me.Chart2.Size = New System.Drawing.Size(520, 405)
         Me.Chart2.TabIndex = 1
         Me.Chart2.Text = "Chart2"
         '
         'Chart1
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
+        ChartArea6.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea6)
         Me.Chart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Legend2.Name = "Temperatura"
-        Me.Chart1.Legends.Add(Legend2)
+        Legend6.Name = "Temperatura"
+        Me.Chart1.Legends.Add(Legend6)
         Me.Chart1.Location = New System.Drawing.Point(3, 3)
         Me.Chart1.Name = "Chart1"
-        Series3.BorderWidth = 5
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series3.Legend = "Temperatura"
-        Series3.MarkerBorderWidth = 10
-        Series3.Name = "Temperatura"
-        Series4.BorderWidth = 5
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series4.Legend = "Temperatura"
-        Series4.Name = "Humedad"
-        Me.Chart1.Series.Add(Series3)
-        Me.Chart1.Series.Add(Series4)
+        Series11.BorderWidth = 5
+        Series11.ChartArea = "ChartArea1"
+        Series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series11.Legend = "Temperatura"
+        Series11.MarkerBorderWidth = 10
+        Series11.Name = "Temperatura"
+        Series12.BorderWidth = 5
+        Series12.ChartArea = "ChartArea1"
+        Series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series12.Legend = "Temperatura"
+        Series12.Name = "Humedad"
+        Me.Chart1.Series.Add(Series11)
+        Me.Chart1.Series.Add(Series12)
         Me.Chart1.Size = New System.Drawing.Size(520, 405)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
