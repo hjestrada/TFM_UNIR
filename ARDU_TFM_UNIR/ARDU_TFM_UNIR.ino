@@ -31,8 +31,8 @@ void reconnect();
 #define TOKEN ""
 #define DEVICEID "SAVACOFFEE"
 
-const char* ssid = "Familia Murillo";         //Ingresar SSID de la red wifi
-char* password = "17156673";                  //Ingresar contraseña de la red wifi
+const char* ssid = "tostador";         //Ingresar SSID de la red wifi
+char* password = "milu1234";                  //Ingresar contraseña de la red wifi
 
 char mqtt_server[] = "broker.hivemq.com";     //Ingresar broker mqtt.
 int puertoMQTT = 1883;                    //Ingresar puerto mqtt.
@@ -59,6 +59,7 @@ void setup_wifi() {
 
   while (WiFi.status() != WL_CONNECTED) {
     Serial.println(".");
+     Serial.println("Error al conectar");
     digitalWrite(led, LOW);
   }
 
