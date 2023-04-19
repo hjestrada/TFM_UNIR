@@ -1,0 +1,2 @@
+SSID:<nombre del SSID>
+PASSWORD:<contraseña>
